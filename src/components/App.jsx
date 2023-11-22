@@ -64,7 +64,6 @@ export class App extends Component {
         showModal: false,
       });
     }
-    value.target[1].reset();
   };
 
   handleLoadMore = () => {
@@ -86,11 +85,7 @@ export class App extends Component {
     return (
       <div className={styles.App}>
         <Searchbar onSubmit={this.addValue} />
-        <ImageGallery>
-          {images && (
-            <ImageGalleryItem images={images} onClick={this.toggleModal} />
-          )}
-        </ImageGallery>
+        {images && <ImageGallery images={images} onClick={this.toggleModal} />}
         {loading && <InfinitySpin width="200" color="blue" />}
         {loadMore && <LoadMore onClick={this.handleLoadMore} />}
         {showModal && (

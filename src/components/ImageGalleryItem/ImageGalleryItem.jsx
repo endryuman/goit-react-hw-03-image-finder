@@ -1,13 +1,13 @@
-export const ImageGalleryItem = ({ images, onClick }) => {
-  return images.map(({ id, largeImageURL, tags, webformatURL }) => (
-    <li key={id}>
+export const ImageGalleryItem = ({ image, onClick }) => {
+  return (
+    <li>
       <img
-        src={webformatURL}
-        alt={tags}
+        src={image.webformatURL}
+        alt={image.tags}
         width={360}
         height={300}
-        onClick={() => onClick(largeImageURL)}
+        onClick={() => onClick(image.largeImageURL)}
       />
     </li>
-  ));
+  );
 };
