@@ -63,6 +63,7 @@ export class App extends Component {
         showModal: false,
       });
     }
+    value.target[1].reset();
   };
 
   handleLoadMore = () => {
