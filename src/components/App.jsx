@@ -5,7 +5,6 @@ import { InfinitySpin } from 'react-loader-spinner';
 import * as ImageService from '../services/imagesApi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem';
 import { LoadMore } from './LoadMore/LoadMore';
 import { Modal } from './Modal/Modal';
 import styles from './App.module.css';
