@@ -53,7 +53,6 @@ export class App extends Component {
   }
 
   addValue = value => {
-    value.preventDefault();
     if (value !== this.state.query) {
       return this.setState({
         query: value,
@@ -63,7 +62,6 @@ export class App extends Component {
         showModal: false,
       });
     }
-    value.target[1].reset();
   };
 
   handleLoadMore = () => {
